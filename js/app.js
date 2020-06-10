@@ -19,24 +19,37 @@
 
   // ];
 
-  // const findMembers = members.filter((members) => {
-  //   return members;
-  // });
-  // document.write(findMembers);
+  // for(let i = members[0]; i<=members.length;i++) {
+  //   document.write(i);
+  // }
 
 
 
 
   // ＝＝＝＝九九の計算＝＝＝＝
 
-for(let x = 1;x <= 9;x++) {
-  for(let y = 1;y <= 9;y++){
-    document.write(x +'×'+ y + '='+ (x*y)+'<br>');
+  // for(let x = 1;x <= 9;x++) {
+  //   for(let y = 1;y <= 9;y++){
+  //     document.write(x +'×'+ y + '='+ (x*y)+'<br>');
+  //   }
+
+  // }
+
+
+
+  // ＝＝＝＝FizzBuzz＝＝＝＝
+
+  for (let i = 1; i <= 30; ++i) {
+    if (i % 15 === 0) {
+      document.write('FizzBuzz' + ' ');
+    } else if (i % 5 === 0) {
+      document.write('Buzz' + ' ');
+    } else if (i % 3 === 0) {
+      document.write('Fizz' + ' ')
+    } else {
+      document.write(i + ' ');
+    }
+
   }
-
-}
-
-
-
 }
 
